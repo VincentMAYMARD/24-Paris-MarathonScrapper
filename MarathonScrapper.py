@@ -1,10 +1,3 @@
-# Vincent MAYMARD
-# 2024-08-19 Web Parser from the Paris 2024 Marathon Result Website
-
-# Credits to Jean MILPIED for providing the methology for this project in his Linkedin post dated 24-08-16:
-# https://www.linkedin.com/posts/jeanmilpied_marathonpourtous-paris2024-activity-7230099336288702465-cFf3
-# ?utm_source=share&utm_medium=member_desktop
-
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
