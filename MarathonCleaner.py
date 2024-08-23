@@ -38,3 +38,4 @@ df['NetRunner%'] = np.ceil(100*df['NetRunnerRank']/netTimes).astype(int)
 df.loc[df['NetRunnerRank'] == -1, 'NetRunner%'] = -1
 
 print(df.loc[df['NetRunnerRank'] == -1])
+print(df)
