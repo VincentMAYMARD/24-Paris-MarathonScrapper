@@ -37,5 +37,6 @@ netTimes = df[df["NetTime"].notna()].shape[0]
 df['NetRunner%'] = np.ceil(100*df['NetRunnerRank']/netTimes).astype(int)
 df.loc[df['NetRunnerRank'] == -1, 'NetRunner%'] = -1
 
-print(df.loc[df['NetRunnerRank'] == -1])
-print(df)
+# Saves the cleaned dataframe to a new parquet file
+filepath = os.path.join(os.getcwd(), "ScrappedData", "CleanedMarathonResults.parquet")
+df.to_parquet(filepath, index=False)
